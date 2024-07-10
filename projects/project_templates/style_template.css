@@ -1,0 +1,71 @@
+body{
+    /*      */
+    background-color: #ccc;
+    font-family:Verdana, Tahoma, sans-serif
+    
+}
+
+h1, h2, h3{
+    /*      */
+    background-color: #aaa;
+    border: 2px groove black;
+}
+
+
+  div {
+    border-top-width: thin;
+    border-right-width: medium;
+    border-bottom-width: thick;
+    border-left-width: 5rem;
+    border-top-style: double;
+    border-right-style: inset;
+    border-bottom-style: outset;
+    border-left-style: groove;
+    border-top-color: #f00;
+    border-right-color: #0f0;
+    border-bottom-color: #00f;
+    border-left-color: #a40;
+    outline-style: ridge;
+    outline-color:  #033;
+  }
+
+
+p{
+    /*lack of a margin, restricted left border layout  */
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    background-color: #ccc;
+    border: 3px groove #0a0;
+    border-radius: .5rem;
+    outline-style: double;
+    outline-color:  #a0a;
+    
+
+}
+
+
+.with_margin {
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-width: 1rem;
+    border-radius: 1rem;
+    border-style: outset;
+    border-color: #033;
+    background-color: #aaa;
+    outline-offset: .1rem;
+    outline: .1rem solid #c80;
+}
+
+.alt_bg {
+    background-color: #f28;
+    border-style: double;
+}
+
+.dim_red {
+    border-color: #300;
+    border-radius: 2rem;
+    border-style: inset;
+}
+
