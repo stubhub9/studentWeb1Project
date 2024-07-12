@@ -1,4 +1,8 @@
-/*body{ 
+/*
+16px == 1 em; is the default normal text size.
+
+
+body{ 
     /*      *//*
     background-color: #ccc;
     font-family:Verdana, Tahoma, sans-serif
@@ -19,6 +23,7 @@ div{
 
 body{
     /*      */
+    font-size: 100%;
     
     background-color: #ccc;
     background-image: url(../../resources/images/shroom4160x3120.jpg), url(../../resources/images/flowers1944x2592.jpg);
@@ -39,7 +44,9 @@ h1, h2, h3{
     border: 2px groove black;
 }
 
-h2 {
+.h1_vw {
+    font-size: 5vw;
+    color: #a00;
 }
 
 
@@ -183,5 +190,14 @@ p{
     text-decoration-color: #d22;
 }
 
+.txt_shadow1 {
+    text-shadow: 1px 10px red;
+    font-variant: small-caps;
+}
 
+.txt_shadow2 {
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 
+    0 0 25px #00f, 0 0 5px #00b;
+}
 
