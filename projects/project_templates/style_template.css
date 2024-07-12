@@ -31,10 +31,11 @@ h1, h2, h3{
 
 
 p{
-    /*lack of a margin, restricted left border layout  */
+    /*lack of a margin, restricted left border layout; of the wide wood tone 3 stack div  */
     margin: 1rem;
     margin-left: .2rem;
     margin-right: .2rem;
+    padding: 1em;
     background-color: #ccc;
     border: 3px groove #0a0;
     border-radius: .5rem;
@@ -68,4 +69,5 @@ p{
     border-radius: 2rem;
     border-style: inset;
 }
+
 

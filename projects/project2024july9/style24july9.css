@@ -19,15 +19,35 @@ div{
 
 body{
     /*      */
-    background-color: #ccc;
-    font-family:Verdana, Tahoma, sans-serif
     
-}
+    background-color: #ccc;
+    background-image: url(../../resources/images/shroom4160x3120.jpg), url(../../resources/images/flowers1944x2592.jpg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-origin: padding-box, border-box;
+    background-size: 416px 312px, 194px 259px;
+    font-family:Verdana, Tahoma, sans-serif;
+    padding: .2rem;
+    /*
+    white-space: pre-wrap;
+    */
+    }
 
 h1, h2, h3{
     /*      */
     background-color: #aaa;
     border: 2px groove black;
+}
+
+h2 {
+}
+
+
+
+@media all and (max-width: 900px){
+    body{
+        padding: 0px;
+    }
 }
 
 img {
@@ -36,7 +56,7 @@ img {
     margin-top: 1rem;
   }
 
-  div {
+  .div1 {
     border-top-width: thin;
     border-right-width: medium;
     border-bottom-width: thick;
@@ -64,8 +84,17 @@ p{
     border-radius: .5rem;
     outline-style: double;
     outline-color:  #a0a;
-    
+}
 
+.p1 {
+    background-image: url("../../resources/icons/BluMinus.png");
+}
+
+.p2 {
+    background-image: url("../../resources/icons/Cross32.png");
+    background-repeat: no-repeat;
+
+    border-block-start: 1rem double #a0a;
 }
 
 
@@ -77,13 +106,13 @@ p{
     border-radius: 1rem;
     border-style: outset;
     border-color: #033;
-    background-color: #aaa;
+    background-color: rgba(150, 150, 150, .8);
     outline-offset: .1rem;
     outline: .1rem solid #c80;
 }
 
 .alt_bg {
-    background-color: #f28;
+    background-color: rgba(255,22,88,0.5);
     border-style: double;
 }
 
@@ -93,15 +122,65 @@ p{
     border-style: inset;
 }
 
-.container2rows {
-    height: 12.5rem;
-    width: 12.5rem;
+
+
+.ring {
+    height: 12rem;
+    width: 12rem;
+    border: 0.5rem solid;
     border-radius: 50%;
     margin: 1rem;
 }
 
+
+.container2rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:rotate(90deg);
+}
+
+.bottom1 {
+    position: relative;
+    right: 8.125rem;
+}
+
+@media screen and (max-width:900px) {
+    .ring {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .bottom1 {
+        right: 4rem;
+    }
+} 
+
 .blue1 {
-    color: #22f;
+    color: #39d;
+}
+
+.purple1 {
+    color: #a0a;
+    position: relative;
+    z-index: 1000;
+}
+
+.red1 {
+    color: #c22;
+}
+
+.yellow1 {
+    color: #ff0;
+}
+
+.green1 {
+    color: #2a2;
+}
+
+.strike3 {
+    text-decoration: wavy overline line-through underline;
+    text-decoration-color: #d22;
 }
 
 
