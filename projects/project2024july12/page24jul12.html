@@ -65,6 +65,43 @@
         <i class="material-icons">computer</i>
         <i class="material-icons icons1">traffic</i>
     </div>
+    <div>
+        <h2>Image text</h2>
+        <p>Add some text to the top left of an image.</p>
+        <div class="container1">
+            <img class="img1" src="SmileyFace.svg" width="200">
+            <div class="topleft1">Added text at 20% from top left.</div>
+        </div>
+    </div>
+
+    <div>
+        <h2>MDN clipPath</h2>
+        <img id="clipped" src="SmileyFace.svg" width="250">
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="cross2">
+                    <rect x="137" y="110" width="90" height="90"/>
+                    <rect x="0" y="110" width="90" height="90"/>
+                    <rect x="137" y="0" width="90" height="90"/>
+                    <rect x="0" y="0" width="90" height="90"/>
+                </clipPath>
+            </defs>
+        </svg>
+
+        <select id="clipPath">
+            <option value="none">none</option>
+            <option value="circle(100px at 110px 100px)">circle</option>
+            <option value="url(#cross2)" selected>cross</option>
+            <option value="inset(20px round 20px)">circle</option>
+            <option value="rect(10px 10px 180px 220px round 20px)">rect</option>
+            <option value="xywh(0 20% 90% 67% round 0 0 5%)">xywh</option>
+            <option value="path('M 0 200 L 0,110 A 110,90 0,0,1 240,100 L 200 340 z')">path</option>
+        </select>
+    </div>
+    <div>
+        <img class="clip-me" src="SmileyFace.svg">
+        <p class="clip-me">I will be clipped.</p>
+    </div>
 
    
 

@@ -106,3 +106,38 @@ p{
 .icons1 {
     font-size: 5rem;
 }
+
+.img1 {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.container1 {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+}
+
+.topleft1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.clipped {
+    margin-bottom: 20px;
+    /*
+    clip-path: url(#cross2);
+    */
+    clip-path: circle(50%) ;
+}
+
+.clip-me {
+    clip-path: inset(10px 20px 30px 40px);
+
+    clip-path: polygon(50% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
