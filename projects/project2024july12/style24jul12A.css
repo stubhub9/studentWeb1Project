@@ -227,14 +227,15 @@ supposed to fix taller childeren floating out
 }
 
 .div5 {
-    background: url(../../resources/icons/Pointer32.png) repeat;
+    background: url(../../resources/images/SmileyFace.svg) repeat;
     border: 2px solid #000;
 }
 
 .transbox1 {
     margin: 30px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(100, 150, 150, 0.6);
     border: 1px, solid #000;
+    font-size: larger;
 }
 
 .transbox1 p {
