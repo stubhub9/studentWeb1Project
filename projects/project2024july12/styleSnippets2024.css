@@ -1,0 +1,198 @@
+body{
+    /*      */
+    background-color: #ccc;
+    font-family:Verdana, Tahoma, sans-serif;
+    
+}
+
+h1, h2, h3{
+    /*      */
+    background-color: #aaa;
+    border: 5px groove black;
+}
+
+
+  .div1 {
+    border-top-width: thin;
+    border-right-width: medium;
+    border-bottom-width: thick;
+    border-left-width: 5rem;
+    border-top-style: double;
+    border-right-style: inset;
+    border-bottom-style: outset;
+    border-left-style: groove;
+    border-top-color: #f00;
+    border-right-color: #0f0;
+    border-bottom-color: #00f;
+    border-left-color: #a40;
+    outline-style: ridge;
+    outline-color:  #033;
+  }
+
+
+.p1{
+    /*lack of a margin, restricted left border layout; of the wide wood tone 3 stack div  */
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    padding: 1em;
+    background-color: #ccc;
+    border: 3px groove #0a0;
+    border-radius: .5rem;
+    outline-style: double;
+    outline-color:  #a0a;
+}
+
+
+.with_margin {
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-width: 1rem;
+    border-radius: 1rem;
+    border-style: outset;
+    border-color: #033;
+    background-color: #aaa;
+    outline-offset: .1rem;
+    outline: .1rem solid #c80;
+}
+
+.alt_bg {
+    background-color: #f28;
+    border-style: double;
+}
+
+.dim_red {
+    border-color: #300;
+    border-radius: 2rem;
+    border-style: inset;
+}
+
+
+.loader {
+    border: 16px solid #eee;
+    border-radius: 50%;
+    border-top: 16px solid #00f;
+    border-bottom: 16px solid #f00;
+    border-left: 16px solid #ff0;
+    border-right: 16px solid #0f0;
+    width: 120px;
+    height: 120px;
+    animation: linear 20s infinite spin;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360%);}
+}
+*/
+
+.container {
+    min-width: 250px;
+    float: left;
+}
+
+.window {
+    overflow: hidden;
+    background-color: #69d;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.sun {
+    background-color: #ff0;
+    border-radius: 50%;
+    height: 150px;
+    aspect-ratio: 1 / 1;
+    animation: 10s linear 0s infinite alternate sun-rise;
+}
+
+@keyframes sun-rise {
+    from {
+        transform: translateY(145px);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.badge {
+    background-color: #f00;
+    color: #ddd;
+    padding: 4px 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.--blue {
+    color: #00f;
+}
+
+.bg--blue {
+    background-color: #00f;
+}
+
+
+.--yellow {
+    color: #ff0;
+}
+
+.bg--yellow {
+    background-color: #ff0;
+}
+
+
+.--red {
+    color: #f00;
+}
+
+.bg--red {
+    background-color: #f00;
+}
+
+.--cyan {
+    color: #0ff;
+}
+
+.bg--cyan {
+    background-color: #0ff;
+}
+
+.--magenta {
+    color: #f0f;
+}
+
+.bg--magenta {
+    background-color: #f0f;
+}
+
+
+.--dk_green {
+    color: #060;
+}
+
+.bg--dk_green {
+    background-color: #060;
+}
+
+.margin0 {
+    margin: 0;
+}
+
