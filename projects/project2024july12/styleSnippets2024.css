@@ -79,6 +79,8 @@ h1, h2, h3{
     width: 120px;
     height: 120px;
     animation: linear 20s infinite spin;
+    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, 
+    indigo, violet);
 }
 
 
@@ -98,8 +100,12 @@ h1, h2, h3{
 */
 
 .container {
+    /*
     min-width: 250px;
+    */
+    width: 32%;
     float: left;
+
 }
 
 .window {
@@ -192,7 +198,65 @@ h1, h2, h3{
     background-color: #060;
 }
 
+
+
+.bg--rainbow{
+
+    background-image: linear-gradient(45deg, red, red, orange, yellow, green, blue, 
+    indigo, violet, violet);
+}
+
 .margin0 {
     margin: 0;
 }
 
+.--large {
+    font-size: 50px;
+}
+
+
+.btn1 {
+    border: none;
+    color: #fff;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.success {background-color: #0a7;}
+
+.success:hover {background-image: linear-gradient(0deg, #0a7, #4eb, #0a7);}
+
+.info {background-image: repeating-linear-gradient(45deg, #660 0px, #660 10px,
+     #f00 10px, #f00 20px);}
+
+.info:hover {
+    background-image: radial-gradient(red 33%, green 17%, blue 50%);
+}
+
+input[type=checkbox] {
+    accent-color: hsl(0, 100%, 50%);
+}
+
+input[type=radio] {
+    accent-color: hsl(180, 100%, 50%);
+}
+
+input[type=range] {
+    accent-color: hsl(240, 100%, 50%);
+}
+
+progress {
+    accent-color: hsl(270, 100%, 50%);
+}
+
+#colDIV {
+    height:300px;
+    background-color:#FFFFFF;
+    column-count:3;
+    column-rule: 4px double hsl(300, 100%, 50%);
+    column-gap: 10px;
+  }
+
+.span3 {
+    column-span: all;
+}

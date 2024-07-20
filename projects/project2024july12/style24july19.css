@@ -1,11 +1,11 @@
 body{
     /*      */
     background-color: #ccc;
-    margin: 5px;
-    padding: 5px;
-    font-family:Verdana, Tahoma, serif;
+    font-family:Verdana, Tahoma, sans-serif;
+    background-image: url("../../resources/images/flower3120x4160.jpg");
     border: 5px solid hsl(240deg, 100%, 50%);
     border-radius: 20px;
+    
 }
 
 h1, h2, h3{
@@ -45,6 +45,8 @@ h1, h2, h3{
     outline-style: double;
     outline-color:  #a0a;
 }
+
+
 
 .bg--barberRW {
     background-image: repeating-linear-gradient(45deg, #bb0 0px, #bb0 10px,
@@ -145,4 +147,64 @@ h1, h2, h3{
     border-style: inset;
 }
 
+
+
 /*   END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****  */
+
+
+
+
+#grid1 {
+    height:400px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    grid: 100px / auto auto auto;
+  }
+
+  
+  #grid1 div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+#twoColGrid {
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+}
+
+
+
+.notecard {
+    display: grid;
+    width: 95%;
+    height: 250px;
+    grid-template-areas: 
+    "topCol topCol .."
+    "... mainCol mainCol"
+    "sideCol mainCol mainCol";
+    grid-template-columns: 0.2fr 0.1fr 0.7fr;
+    grid-template-rows: 50px 1fr 25px;
+    
+}
+
+.header1 {
+    grid-area: topCol;
+    background-color: hsl(30deg, 100%, 50%);
+}
+
+.article1 {
+    grid-area: mainCol;
+    background-color: hsl(60deg, 100%, 50%);
+}
+
+
+.footer1 {
+    grid-area: sideCol;
+    background-color: hsl(120deg, 100%, 50%);
+}
+
