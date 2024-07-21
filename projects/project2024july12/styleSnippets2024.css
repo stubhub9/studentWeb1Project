@@ -233,6 +233,52 @@ h1, h2, h3{
     background-image: radial-gradient(red 33%, green 17%, blue 50%);
 }
 
+
+
+.menu3 {
+    background-color: #bb0;
+    background-image: url(HamburgerIcon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.menu3:hover {
+    transform: scale(1.2, 0.8);
+}
+
+/*  hover before active  */
+.menu3:hover:active {
+    transform: translateY(15%);
+}
+
+.menu4 {
+    padding: 1px 14px 1px 14px;
+}
+
+.menu4:hover {
+    
+    background-color: #060;
+
+}
+
+.menu4:hover rect {
+    fill: #f00;
+}
+
+/*
+button:hover rect.burgerBar2 {
+    fill: #aa6;
+}
+
+
+.burger img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+    */
+
 input[type=checkbox] {
     accent-color: hsl(0, 100%, 50%);
 }

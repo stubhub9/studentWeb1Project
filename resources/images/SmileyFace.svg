@@ -6,4 +6,8 @@
 <ellipse rx="2.5" ry="4" cx="-6" cy="-7" fill="black"/>
 <ellipse rx="2.5" ry="4" cx="6" cy="-7" fill="black"/>
 <path stroke="black" d="M -12,5 A 13.5,13.5,0 0,0 12,5 A 13,13,0 0,1 -12,5"/>
+<path d="M -12,5 Q 0 19, 12 5" 
+stroke="#f44" fill="transparent"/>
+<path d="M -12,6 C 0 21, 10 10, 12 5" 
+stroke="#f44" fill="transparent"/>
 </svg>
