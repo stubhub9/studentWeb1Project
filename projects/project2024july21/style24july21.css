@@ -1,0 +1,148 @@
+body{
+    /*      */
+    background-color: #ccc;
+    margin: 5px;
+    padding: 5px;
+    font-family:Verdana, Tahoma, serif;
+    border: 5px solid hsl(240deg, 100%, 50%);
+    border-radius: 20px;
+}
+
+h1, h2, h3{
+    /*      */
+    background-color: #aaa;
+    border: 5px groove black;
+}
+
+
+  .div1 {
+    border-top-width: thin;
+    border-right-width: medium;
+    border-bottom-width: thick;
+    border-left-width: 5rem;
+    border-top-style: double;
+    border-right-style: inset;
+    border-bottom-style: outset;
+    border-left-style: groove;
+    border-top-color: #f00;
+    border-right-color: #0f0;
+    border-bottom-color: #00f;
+    border-left-color: #a40;
+    outline-style: ridge;
+    outline-color:  #033;
+  }
+
+
+.p1{
+    /*lack of a margin, restricted left border layout; of the wide wood tone 3 stack div  */
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    padding: 1em;
+    background-color: #ccc;
+    border: 3px groove #0a0;
+    border-radius: .5rem;
+    outline-style: double;
+    outline-color:  #a0a;
+}
+
+.bg--barberRW {
+    background-image: repeating-linear-gradient(45deg, #bb0 0px, #bb0 10px,
+     #b00 10px, #b00 20px);
+}
+
+
+.--blue {
+    color: #00f;
+}
+
+.bg--blue {
+    background-color: #00f;
+}
+
+
+.--yellow {
+    color: #ff0;
+}
+
+.bg--yellow {
+    background-color: #ff0;
+}
+
+
+.--red {
+    color: #f00;
+}
+
+.bg--red {
+    background-color: #f00;
+}
+
+.--cyan {
+    color: #0ff;
+}
+
+.bg--cyan {
+    background-color: #0ff;
+}
+
+
+.--green {
+    color: #0f0;
+}
+
+.bg--green {
+    background-color: #0f0;
+}
+
+.--magenta {
+    color: #f0f;
+}
+
+.bg--magenta {
+    background-color: #f0f;
+}
+
+
+.--dk_green {
+    color: #060;
+}
+
+.bg--dk_green {
+    background-color: #060;
+}
+
+
+.bg--rainbow{
+
+    background-image: linear-gradient(45deg, red, red, orange, yellow, green, blue, 
+    indigo, violet, violet);
+}
+
+
+
+.with_margin {
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-width: 1rem;
+    border-radius: 1rem;
+    border-style: outset;
+    border-color: #033;
+    background-color: #aaa;
+    outline-offset: .1rem;
+    outline: .1rem solid #c80;
+}
+
+.alt_bg {
+    background-color: #f28;
+    border-style: double;
+}
+
+.dim_red {
+    border-color: #300;
+    border-radius: 2rem;
+    border-style: inset;
+}
+
+/*   END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****  */
