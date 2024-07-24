@@ -38,6 +38,110 @@
         <script type="text/javascript" src="document_open.js"></script>-->
     </div>
 
+    <div class="with_margin">
+      
+      <h2> </h2>
+   <h6> // Constructor</h6>
+   <p class="p1"> 
+const multiply = new Function("x", "y", "return x * y");
+</p>
+<h6>// Declaration</h6>
+<p class="p1">
+function multiply(x, y) {
+  return x * y;
+} <br>// No need for semicolon here
+</p>
+
+<div class="p1">
+<h6 >// Expression; the function is anonymous but assigned to a variable</h6>
+const multiply = function (x, y) {
+  return x * y;
+};\
+</div>
+
+<h6>// Expression; the function has its own name</h6>
+<p class="p1">
+const multiply = function funcName(x, y) {
+  return x * y;
+};
+</p>
+<h6>// Arrow function</h6>
+const multiply = (x, y) => x * y;
+
+<h6>// Method</h6>
+<p class="p1">
+const obj = {
+  multiply(x, y) {
+    return x * y;
+  },
+};
+</p>
+    </div>
+    
+
+    <div class="with_margin">
+      <form>
+        Phone Number:
+        <input type="text" id="phoneNum1">
+        <span id="reminder1"></span><br><br>
+        <textarea>Using DOM Level 0:  onfocus, onblur;<br>
+          only supports 1 handler;<br>
+          Better to use 
+        </textarea>
+      </form>
+    </div>
+
+    <div  class="p1">
+      
+      <h4>Buttons doing stuff, maybe</h4>
+    <div class="with_margin">
+      <button id="btn1">
+        Button One
+      </button>
+      <button>
+        Click for Event
+      </button>
+      <button>
+        Click for Event
+      </button>
+      <button>
+        Click for Event
+      </button>
+      <button>
+        Click for Event
+      </button>
+    </div>
+
+    <div id="buttonsOutput" class="with_margin">
+      iIl1O0
+    </div>
+
+    <div class="wrapper2 p1">
+      <div class="header2">New Product Reveal</div>
+      <div id="top_nav2" class="story_nav2">
+        <a href="#sumdiv2" id="sumlink2">Summary</a>
+        <a href="#statsdiv2" id="statslink2">Stats</a>
+        <a href="#comdiv2" id="comlink2">Comments</a>
+      </div>
+      <div id="sumdiv2" class="spart2">
+        <p>Summary</p>
+        <p> greatest, original, alternate, ...  most people need 10. </p>
+      </div>
+      <div id="statsdiv2" class="spart2">
+        <p>Stats</p>
+        App Loading Speed:  0.02ms
+        <p>Globals:  53</p>
+        <p>File Size:  10MiB</p>
+      </div>
+      <div id="comdiv2" class="spart">
+        <p>Comments</p>
+        <p>schill1:  I use 10 daily.</p>
+        <p>schill2:  Last forever, never break.</p>
+      </div>
+    </div>
+
+    
+  </div>
     
     <script src="script24july21.js"></script>
     

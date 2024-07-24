@@ -1,12 +1,16 @@
 body{
     /*      */
     background-color: #ccc;
-    background-image: ;
+    background-image: url(resources/images/P1070144.JPG);
     margin: 5px;
     padding: 5px;
     font-family:Verdana, Tahoma, serif;
     border: 5px solid hsl(240deg, 100%, 50%);
     border-radius: 20px;
+}
+
+header {
+    background-color: #008;
 }
 
 h1, h2, h3{
