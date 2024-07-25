@@ -57,6 +57,60 @@ button1.addEventListener("click", function(event) {
     textblock1.innerHTML = "The "+ event.type + event.currentTarget + event.detail + event.target + "for Button1 did this.";
 });
 
+//  Custom Event Button
+
+const catFound = new CustomEvent("animalfound", {
+    detail: {
+        name: "cat",
+    },
+});
+
+
+const dogFound = new CustomEvent("animalfound", {
+    detail: {
+        name: "dog",
+    },
+});
+
+const element3 = document.createElement("div");
+element3.addEventListener("animalfound", (e) => 
+    //console.log(e.detail.name)
+    textblock1.innerHTML = "Custom Event:  "+ e.type /*+ e.currentTarget*/+ " " + e.detail.name + /*e.target +*/ "  for Button2 did this. "
+);
+
+//  dispatch the events
+let button2 = document.getElementById("btn2");
+//IS: textblock1 = document.getElementById("buttonsOutput");
+dogtoggle3 = false;
+button2.addEventListener("click", function(event) {
+if (dogtoggle3) {
+    element3.dispatchEvent(dogFound);
+    dogtoggle3=false;
+} else  {
+    element3.dispatchEvent(catFound);
+    dogtoggle3=true;
+};
+//T/F WOULDN'T TOGGLE:  dogtoggle3 = -dogtoggle3;
+
+});
+
+/*button2.addEventListener("click", function(event) {
+    textblock1.innerHTML = "The "+ event.type + event.currentTarget + event.detail + event.target + "for Button1 did this.";
+});
+
+/*
+let introduceSelf3 = new CustomEvent ("introduceself3", {
+    detail: {
+        name: "Sunny"
+    }
+});
+let introElm3 = document.getElementById("intro-button");
+introElm3.addEventListener("introduceself3", function(event) {
+    window.alert('Hi, Name is:  ${event.detail.name}');
+});
+introElm3.dispatchEvent (introduceself3);
+*/
+
 
 //  Header/ Viewer for 3 items.
 let slinks = [document.getElementById("sumlink2"),
