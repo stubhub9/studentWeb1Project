@@ -1,3 +1,5 @@
+"use strict"
+//TODON'T:  ?onload [onxxxx] only supports a single listener?
 document.body.onload = addElement;
 document.body.onload = addElement;
 
@@ -49,10 +51,10 @@ pNum.onblur = function() {
 }
 
 
-//  Buttons doing stuff
+//  Buttons doing stuff   *****       Buttons doing stuff   *****       Buttons doing stuff   *****     
 
 let button1 = document.getElementById("btn1");
-let textblock1 = document.getElementById("buttonsOutput");
+var textblock1 = document.getElementById("buttonsOutput");
 button1.addEventListener("click", function(event) {
     textblock1.innerHTML = "The "+ event.type + event.currentTarget + event.detail + event.target + "for Button1 did this.";
 });
@@ -90,6 +92,38 @@ if (dogtoggle3) {
     element3.dispatchEvent(catFound);
     dogtoggle3=true;
 };
+
+
+//   Button  Time
+
+let button33 = document.getElementById("btn33");
+textblock1 = document.getElementById("buttonsOutput");
+button33.addEventListener("click", function(event) {
+    textblock1.innerHTML = "the time";
+    let thetime4 = new Date(),
+        hours4 = thetime4.getHours(),
+        minutes4 = thetime4.getMinutes(),
+        seconds4 = thetime4.getSeconds(),
+        ap = (hours4 >= 12) ? "p.m." : "a.m.";
+    hours4 = (hours4 >= 13) ? hours4 -= 12 : hours4;
+    hours4 = (hours4 < 1) ? 12 : hours4;
+    minutes4 = (minutes4 < 10) ? "0" + minutes4 : minutes4; 
+    seconds4 = (seconds4 < 10) ? "0" + seconds4 : seconds4;
+
+    textblock1.innerHTML = hours4 + ":" + minutes4 + ":" + seconds4 + " " + ap;
+});
+
+
+
+let button4 = document.getElementById("btn4");
+//textblock1 = document.getElementById("buttonsOutput");
+
+let textblock4 = document.getElementById("buttonsOutput");
+button4.addEventListener("click", function(event) {
+    textblock4.innerHTML = "The "+ event.type + event.currentTarget + event.detail + event.target + "for Button4 did this.";
+});
+
+
 //T/F WOULDN'T TOGGLE:  dogtoggle3 = -dogtoggle3;
 
 });
@@ -110,6 +144,9 @@ introElm3.addEventListener("introduceself3", function(event) {
 });
 introElm3.dispatchEvent (introduceself3);
 */
+
+//  Show time button
+
 
 
 //  Header/ Viewer for 3 items.

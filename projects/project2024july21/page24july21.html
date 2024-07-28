@@ -7,7 +7,7 @@
     -->
 
 
-    <title>Doc frag, DOM, july24</title>
+    <title>Doc frag, DOM, Buttons, linked div viewer july24</title>
     <link href="style24july21.css" rel="stylesheet">
     
     <link rel="icon" type="image/x-icon" href="../../resources/images/SmileyFace.svg">
@@ -17,7 +17,7 @@
   <body>
     <header>
     <div>
-        <h1>Doc frag, DOM, and stuff</h1>
+        <h1>Doc frag, DOM, buttons, 3 Div Viewer, and stuff</h1>
         <p class="p1">iIl1O0</p>
     </div>
     </header>
@@ -92,20 +92,32 @@ const obj = {
     </div>
 
     <div  class="p1">
-      
+<!--    Buttons doing stuff      *****        Buttons doing stuff      *****    -->  
       <h4>Buttons doing stuff, maybe</h4>
-    <div class="with_margin">
+      <p class="p1 bg--magenta">
+        Btn1 works,<br> 
+        Btn2 works, <br>
+        but btn3 & btn4 won't work until <br> 
+        Btn2 has been clicked.
+      </p>
+      <p class="p1 alt_bg">
+        Updated to "use strict"
+        Now only btn1 works!<br>
+        Slow clicking btn1 shows HTMLButtonElement]1<br>
+        Fast clicks get the number up to 3!!??
+      </p>
+    <div class="with_margin alt_bg">
       <button id="btn1">
         Button One
       </button>
       <button id="btn2">
         Custom Event
       </button>
-      <button>
-        Click for Event
+      <button id = "btn33">
+        Show Time
       </button>
-      <button>
-        Click for Event
+      <button id = "btn4">
+        Does button work?
       </button>
       <button>
         Click for Event
