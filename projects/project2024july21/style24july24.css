@@ -154,3 +154,38 @@ h1, h2, h3{
 }
 
 /*   END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****  */
+
+
+/*   Bouncing Balls    */
+html, body {
+    margin: 0;
+  }
+  
+  html {
+    /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    */
+    height: 100%;
+  }
+  
+  .body1 {
+    overflow: hidden;
+    height: inherit;
+  }
+  
+  .h1b {
+    font-size: 2rem;
+    letter-spacing: -3px;
+    /*position: absolute;
+    */
+    margin: 0;
+    top: -14px;
+    right: 5px;
+  
+    color: transparent;
+    text-shadow: 0 0 4px white;
+  }
+
+  /*   End of Bouncing Balls   */
+
+
+  

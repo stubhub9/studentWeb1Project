@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="icon" type="image/x-icon" href="../../resources/images/SmileyFace.svg">
+    <title>Video test page, green screen</title>
+    <style>
+      body {
+        background: black;
+        color: #cccccc;
+      }
+      #c2 {
+/*        background-image: url(media/foo.png);*/
+        background-image: url(../../resources/images/flower3120x4160.jpg);
+        background-repeat: no-repeat;
+      }
+      div {
+        float: left;
+        border: 1px solid #444444;
+        padding: 10px;
+        margin: 10px;
+        background: #3b3b3b;
+      }
+      
+.bg--blue {
+    background-color: #00f;
+}
+
+
+.p1{
+    /*lack of a margin, restricted left border layout; of the wide wood tone 3 stack div  */
+    margin: 1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    padding: 1em;
+    background-color: #ccc;
+    border: 3px groove #0a0;
+    border-radius: .5rem;
+    outline-style: double;
+    outline-color:  #a0a;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Video test page, green screen</h1>
+        <p class="p1">This document establishes two canvas elements, with the IDs c1 and c2. Canvas c1 is used to display the current frame of the original video, while c2 is used to display the video after performing the chroma-keying effect; c2 is preloaded with the still image that will be used to replace the
+        <span class="bg--blue"> WHITE WATERFALL </span><br> green background in the video.</p>
+    </header>
+    <div>
+        <video
+          id="video"
+          src="../../resources/video/nicedblfallvidvw.mp4"
+          controls
+          crossorigin="anonymous" />
+<!--          <video
+            id="video"
+            src="media/video.mp4"
+            controls
+            crossorigin="anonymous" />
+            -->
+    </div>
+    <div>
+        <canvas id="c1" width="96" height="160"></canvas>
+        <canvas id="c2" width="96" height="160"></canvas>
+<!--        <canvas id="c1" width="160" height="96"></canvas>
+        <canvas id="c2" width="160" height="96"></canvas>-->
+    </div>
+    <script src="VideoGreenScreenScript.js"></script>
+  </body>
+</html>
