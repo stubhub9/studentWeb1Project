@@ -196,3 +196,24 @@ for (let i = 0; i < 4; i++) {
       }
     }
   }
+
+  //  vid on canvas     (((())))     vid on canvas     (((())))     vid on canvas     (((())))   
+  var canvas3 = document.getElementById('canvas3');
+var ctx3 = canvas.getContext('2d');
+var vid1 = document.getElementById('vid1');
+
+// set canvas size = video size when known
+/*vid1.addEventListener('loadedmetadata', function() {
+  canvas3.width = vid1.videoWidth;
+  canvas3.height = vid1.videoHeight;
+});*/
+
+vid1.addEventListener('play', function() {
+  var $this = this; //cache
+  (function loop() {
+    if (!$this.paused && !$this.ended) {
+      ctx3.drawImage($this, 0, 0);
+      setTimeout(loop, 1000 / 30); // drawing at 30fps
+    }
+  })();
+}, 0);

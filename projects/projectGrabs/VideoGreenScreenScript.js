@@ -3,13 +3,13 @@
 const processor = {};
 
 processor.doLoad = function doLoad() {
-  const video = document.getElementById("video");
+  const video = document.getElementById("vid1");
   this.video = video;
 
-  this.c1 = document.getElementById("c1");
+  this.c1 = document.getElementById("canvas1");
   this.ctx1 = this.c1.getContext("2d");
 
-  this.c2 = document.getElementById("c2");
+  this.c2 = document.getElementById("canvas2");
   this.ctx2 = this.c2.getContext("2d");
 
   video.addEventListener(
@@ -45,6 +45,9 @@ processor.timerCallback = function timerCallback() {
       if (green > 100 && red > 100 && blue < 43) {
         data[i + 3] = 0;
       }
+/*      if (green > 100 && red > 100 && blue < 43) {
+        data[i + 3] = 0;
+      }*/
     }
     this.ctx2.putImageData(frame, 0, 0);
   };

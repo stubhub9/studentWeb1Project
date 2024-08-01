@@ -10,10 +10,10 @@
         background: black;
         color: #cccccc;
       }
-      #c2 {
+      #canvas2 {
 /*        background-image: url(media/foo.png);*/
         background-image: url(../../resources/images/flower3120x4160.jpg);
-        background-repeat: no-repeat;
+        background-size:contain ;
       }
       div {
         float: left;
@@ -24,7 +24,8 @@
       }
       
 .bg--blue {
-    background-color: #00f;
+    background-color: #008;
+    color: #aaa;
 }
 
 
@@ -35,6 +36,7 @@
     margin-right: .2rem;
     padding: 1em;
     background-color: #ccc;
+    color: #444;
     border: 3px groove #0a0;
     border-radius: .5rem;
     outline-style: double;
@@ -47,25 +49,27 @@
   <body>
     <header>
         <h1>Video test page, green screen</h1>
-        <p class="p1">This document establishes two canvas elements, with the IDs c1 and c2. Canvas c1 is used to display the current frame of the original video, while c2 is used to display the video after performing the chroma-keying effect; c2 is preloaded with the still image that will be used to replace the
+        <p class="p1">This document establishes two canvas elements, with the IDs canvas1 and 2. canvas1 is used to display the current frame of the original video, while canvas2 is used to display the video after performing the chroma-keying effect; and is preloaded with the still image that will be used to replace the
         <span class="bg--blue"> WHITE WATERFALL </span><br> green background in the video.</p>
     </header>
+
     <div>
-        <video
-          id="video"
-          src="../../resources/video/nicedblfallvidvw.mp4"
-          controls
-          crossorigin="anonymous" />
-<!--          <video
+        <p6 class="p1">video1</p6>
+        <video id="vid1" width="300" height="400" controls>
+          <source src="../../resources/video/nicedblfallvidvw.mp4">
+        </video>
+        
+          
+ <!--         <video
             id="video"
             src="media/video.mp4"
             controls
             crossorigin="anonymous" />
-            -->
+ -->           
     </div>
     <div>
-        <canvas id="c1" width="96" height="160"></canvas>
-        <canvas id="c2" width="96" height="160"></canvas>
+        <canvas id="canvas1" width="300" height="400"></canvas>
+        <canvas id="canvas2" width="300" height="400"></canvas>
 <!--        <canvas id="c1" width="160" height="96"></canvas>
         <canvas id="c2" width="160" height="96"></canvas>-->
     </div>
