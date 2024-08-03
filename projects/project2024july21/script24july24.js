@@ -197,6 +197,35 @@ for (let i = 0; i < 4; i++) {
     }
   }
 
+// End of series of arcs
+
+/* 
+
+ctx1.linewidth = 40;
+ctx1.beginPath();
+ctx1.lineTo(425,25)
+
+  */
+
+ctx1.moveTo(475, 25);
+ctx1.quadraticCurveTo(425, 25, 425, 62.5);
+ctx1.quadraticCurveTo(425, 100, 450, 100);
+ctx1.quadraticCurveTo(450, 120, 430, 125);
+ctx1.quadraticCurveTo(460, 120, 465, 100);
+ctx1.quadraticCurveTo(525, 100, 525, 62.5);
+ctx1.quadraticCurveTo(525, 25, 475, 25);
+ctx1.stroke();
+
+
+
+ctx1.linewidth = 40;
+ctx1.beginPath();
+
+ctx1.moveTo(575, 25);
+ctx1.lineTo(575,155)
+ctx1.stroke();
+
+
   //  vid on canvas     (((())))     vid on canvas     (((())))     vid on canvas     (((())))   
   var canvas3 = document.getElementById('canvas3');
 var ctx3 = canvas.getContext('2d');

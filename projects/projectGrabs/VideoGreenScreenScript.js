@@ -3,16 +3,16 @@
 const processor = {};
 
 processor.doLoad = function doLoad() {
-  const video = document.getElementById("vid1");
-  this.video = video;
+  const vid1 = document.getElementById("vid1");
+  this.vid1 = vid1;
 
-  this.c1 = document.getElementById("canvas1");
-  this.ctx1 = this.c1.getContext("2d");
+  this.canvas1 = document.getElementById("canvas1");
+  this.ctx1 = this.canvas1.getContext("2d");
 
-  this.c2 = document.getElementById("canvas2");
-  this.ctx2 = this.c2.getContext("2d");
+  this.canvas2 = document.getElementById("canvas2");
+  this.ctx2 = this.canvas2.getContext("2d");
 
-  video.addEventListener(
+  vid1.addEventListener(
     "play",
     () => {
       this.width = video.videoWidth / 2;
@@ -23,18 +23,8 @@ processor.doLoad = function doLoad() {
   );
 };
 
-processor.timerCallback = function timerCallback() {
-    if (this.video.paused || this.video.ended) {
-      return;
-    }
-    this.computeFrame();
-    setTimeout(() => {
-      this.timerCallback();
-    }, 0);
-  };
-
   processor.computeFrame = function () {
-    this.ctx1.drawImage(this.video, 0, 0, this.width, this.height);
+    this.ctx1.drawImage(this.vid1, 0, 0, this.width, this.height);
     const frame = this.ctx1.getImageData(0, 0, this.width, this.height);
     const data = frame.data;
   
@@ -51,3 +41,13 @@ processor.timerCallback = function timerCallback() {
     }
     this.ctx2.putImageData(frame, 0, 0);
   };
+
+  processor.timerCallback = function timerCallback() {
+      if (this.vid1.paused || this.vid1.ended) {
+        return;
+      }
+      this.computeFrame();
+      setTimeout(() => {
+        this.timerCallback();
+      }, 0);
+    };

@@ -31,10 +31,8 @@
 
 .p1{
     /*lack of a margin, restricted left border layout; of the wide wood tone 3 stack div  */
-    margin: 1rem;
-    margin-left: .2rem;
-    margin-right: .2rem;
-    padding: 1em;
+    margin: 2rem;
+    padding: 1rem;
     background-color: #ccc;
     color: #444;
     border: 3px groove #0a0;
@@ -50,11 +48,9 @@
     <header>
         <h1>Video test page, green screen</h1>
         <p class="p1">This document establishes two canvas elements, with the IDs canvas1 and 2. canvas1 is used to display the current frame of the original video, while canvas2 is used to display the video after performing the chroma-keying effect; and is preloaded with the still image that will be used to replace the
-        <span class="bg--blue"> WHITE WATERFALL </span><br> green background in the video.</p>
+        <span class="bg--blue"> WHITE WATERFALL </span><br><s> green background</s> in the video.</p>
     </header>
-
     <div>
-        <p6 class="p1">video1</p6>
         <video id="vid1" width="300" height="400" controls>
           <source src="../../resources/video/nicedblfallvidvw.mp4">
         </video>
@@ -68,11 +64,15 @@
  -->           
     </div>
     <div>
+    <p4 class="p1 bg--blue">canvas should be showing video frames when vid is playing</p4>
+  </div>
+    <div>
         <canvas id="canvas1" width="300" height="400"></canvas>
         <canvas id="canvas2" width="300" height="400"></canvas>
 <!--        <canvas id="c1" width="160" height="96"></canvas>
         <canvas id="c2" width="160" height="96"></canvas>-->
     </div>
+    
     <script src="VideoGreenScreenScript.js"></script>
   </body>
 </html>
