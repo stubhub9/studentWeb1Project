@@ -163,3 +163,9 @@ canvas {
     background-repeat: no-repeat;
     
 }
+
+
+.p2 {
+    backdrop-filter: hue-rotate(180deg);
+    text-shadow: 2px 2px hsl(240deg, 100%, 50%);
+}

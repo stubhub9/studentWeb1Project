@@ -155,3 +155,8 @@ h1, h2, h3{
 }
 
 /*   END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****     END of Template   ****  */
+
+.p2 {
+    backdrop-filter: hue-rotate(180deg);
+    text-shadow: 2px 2px hsl(240deg, 100%, 50%);
+}
